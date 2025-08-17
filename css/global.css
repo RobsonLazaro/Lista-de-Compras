@@ -1,0 +1,109 @@
+:root{
+    --font-family: 'Inter', sans-serif;
+
+    --bg-primary:#F4F5FB;
+    --bg-secondary:#FFF;
+
+    --color-brand: #CA3884;
+    --color-brand-hover: #A52C6B;
+    --color-danger: #C93847;
+
+    --content-primary: #080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    --always-white: #FFF;
+
+    --border-primary:#D1D5DB;
+    --border-hover:#B9C2D0;
+
+    --text-title: 600 1.5rem/1.33 var(--font-family);
+    --text-label: 500 1rem/1.2 var(--font-family);
+    --text-paragraph: 400 2rem/1.2 var(--font-family);
+    --text-link: 400 0.875/1.14 var(--font-family);
+}
+body{
+    background-color: var(--bg-primary);
+    font: var(--text-label);
+}
+.container{
+    margin: 0 auto;
+    width: 627px;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem ;
+}
+
+#voltar{
+    padding-block: 1rem;
+}
+
+#voltar a {
+    font: var(--text-link);
+    color: var(--color-brand);
+    text-decoration: none;
+}
+
+.container h1{
+    font: var(--text-title);
+}
+input[type="text"]{
+    border: 2px solid var(--border-primary);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.125rem;
+    outline: 0px;
+
+    &:hover{
+        border-color: var(--border-hover) ;
+    }
+
+    &:focus{
+        border-color: var(--color-brand);
+    }
+}
+
+input[type="button"]{
+    border: none;
+    padding: 0.75rem 1.5rem ;
+    border-radius: .8rem;
+    background-color: var(--color-brand);
+    color: var(--always-white);
+    cursor: pointer;
+    &:hover{
+        background-color:var(--color-brand-hover);
+    }
+}
+
+form{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 2.5rem ;
+}
+
+.flex-1{
+    flex:1
+}
+
+#lista-ativa{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: .625rem;
+}
+
+.checkbox-wrapper{
+    display: flex;
+    width: 100%;
+    border-radius: .625rem;
+    padding: .5rem .625rem;
+    gap: .625rem;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    color: var(--content-secondary);
+
+    img{
+        cursor: pointer;
+    }
+}

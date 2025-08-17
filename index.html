@@ -1,0 +1,65 @@
+<html lang="pt-BR">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">    
+        <div id="logo">
+            <img src="./assets/logo.svg" alt="Logo da Quicklist">
+        </div>
+        <div id="voltar">
+            <a href=""><- Voltar</a>
+        </div>
+
+        <h1>Compras da semana</h1>
+
+        <section>
+            <form method="post">
+                <input id="inputText" type="text" placeholder="Adicione um novo item" class="flex-1">
+                <input type="button" value="Adicionar itens">
+            </form>
+            <section id="lista-ativa">
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="Pao de queijo" id="Pao de queijo">
+                    <label for="Pao de queijo" class="flex-1">Pão de queijo</label>
+                    <img src="assets/delete.svg" alt="icon de deletar">
+
+                </div>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="Cafe preto" id="Cafe preto" value="Cafe preto">
+                    <label for="Cafe preto" class="flex-1">Café preto</label>
+                    <img src="assets/delete.svg" alt="icon de deletar">
+                </div>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="Suco de Laranja" id="Suco de laranja" value="Suco de laranja">
+                    <label for="Suco de laranja" class="flex-1">Suco de laranja</label>
+                    <img src="assets/delete.svg" alt="icon de deletar">
+                </div>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="Bolacha" id="Bolacha">
+                    <label for="Bolacha" class="flex-1">Bolacha</label>
+                    <img src="assets/delete.svg" alt="icon de deletar">
+                </div>
+
+            </section>
+        </section>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
