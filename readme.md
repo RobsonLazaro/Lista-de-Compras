@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">Travelgram ✈</h1>
+<h1 align="center" style="font-weight: bold;">Lista de Compras 🛒</h1>
 
 <p align="center">
  <a href="#tech">Tecnologias</a> • 
